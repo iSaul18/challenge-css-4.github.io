@@ -1,0 +1,217 @@
+:root {
+    --Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Grayish-Magenta: hsl(303, 10%, 53%);
+    --Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 3.8rem;
+    color: var(--Dark-Magenta);
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: hsl(302, 14%, 42%);
+}
+
+@media (min-width: 420px){
+    h1 {
+        text-align: start;
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+
+    p {
+        text-align: start;
+        font-size: 2.1rem;
+        line-height: 3rem;
+    }
+} 
+
+.container-main {
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2.5rem 4rem 2.5rem;
+    text-align: center;
+}
+
+@media (min-width: 420px){
+
+    .container-sup {
+        display: flex;
+        padding: 4rem 0rem 3rem 5rem ;
+    }
+
+    .container-title {
+        margin: 0 35rem 0 0 ;
+    }
+
+    .container-main {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+        padding: 1rem 22rem 1rem 22rem;
+        background-size: 59rem, 108rem;
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+.container-ranking {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ranking {
+    background-color: var(--Grayish-Magenta);
+    font-weight: 700;
+    padding: 1.5rem 0 0.1rem 0;
+    margin: 0.8rem 0;
+    border-radius: 1.2rem;
+}
+
+@media (min-width: 420px){
+
+    .container-ranking {
+        padding-top: 6rem;
+        width: 60rem;
+    }
+
+    .ranking {
+        height: 7rem;
+        width: 50rem;
+        background-color: var(--Grayish-Magenta);
+        font-weight: 700;
+        padding: 0.5rem 0 2rem 0;
+        margin: 1rem 0 2rem 0;
+        border-radius: 1.2rem;
+    }
+    .ranking p {
+        font-weight: bolder;
+        font-size: 2.2rem;
+        display: inline-block;
+        margin-left: 3rem ;
+    }
+
+    .ranking img {
+        width: 2rem;
+    }
+
+    .rank1 {
+        margin-right: 0;
+        margin-left: 0rem;
+    }
+
+    .rank2 {
+        margin-right: 0;
+        margin-left: 5rem;
+    }
+    
+    .rank3 {
+        margin-right: 0;
+        margin-left: 10rem;
+    }
+} 
+
+.container-comments {
+    margin-top: 2rem 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.comments {
+    background-color: var(--Dark-Magenta);
+    color: var(--White);
+    font-size: 2rem;
+    height: 26rem;
+    padding: 3rem 1rem 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+}
+
+.comments-img {
+    text-align: start;
+    border-radius: 5rem;
+    width: 5rem;
+}
+.comments-textos{
+    display: inline-block;
+    text-align: start;
+    margin: 0 8rem 2rem 1rem;
+    line-height: 0.5rem;
+}
+
+.comments-p-1 {
+    color: var(--White);
+    margin: 1rem;
+    line-height: 2.5rem;
+}
+
+.comments-p-2 {
+    color: var(--Soft-Pink);
+    margin: 1rem;
+    line-height: 2.5rem;
+}
+
+.comments-q {
+    display: block;
+    text-align: start;
+    font-size: 1.9rem;
+}
+
+@media (min-width: 420px){
+
+    .container-comments {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .comments {
+        background-color: var(--Dark-Magenta);
+        color: var(--White);
+        font-size: 2rem;
+        height: 26rem;
+        width: 42rem;
+        padding: 3rem;
+        margin: 0 4rem;
+        border-radius: 1.5rem;
+    }
+
+    .comments-textos {
+        font-size: 2rem;
+    }
+    
+    .comment-2 {
+        margin-top: 4rem;
+    }
+    .comment-3 {
+        margin-top: 8rem;
+    }
+} 
